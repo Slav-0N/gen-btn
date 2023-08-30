@@ -5,9 +5,9 @@
   z-index: 150;
 }
 
-#in-messages input {
+/* #in-messages input {
   -webkit-appearance: none;
-}
+} */
 
 #messengers-float-button {
   width: 50px;
@@ -20,7 +20,8 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  transform: rotate(135deg);
+ 
+  border: 0;
 
 
   /* transition-property:  transform; */
@@ -30,15 +31,13 @@
     transition-property: transform;
 }
 
-#messengers-float-button:hover {
-  transform: rotate(0deg);
-}
+
 
 #messengers-float-button.inmcall {
   animation-duration: 4s;
   animation-name: phone-ring;
-  animation-iteration-count: infinite;
-  background: url(https://messengers.incolor.agency/color_phone.svg) #13c0e8;
+  /* animation-iteration-count: infinite; */
+  background: #13c0e8;
 }
 
 #messengers-float-button.inmch {
@@ -98,7 +97,7 @@
   z-index: 49;
   animation-duration: 4s;
   animation-name: phone-ring-circle;
-  animation-iteration-count: infinite;
+  /* animation-iteration-count: infinite; */
   box-sizing: border-box;
 }
 
@@ -113,7 +112,7 @@
   z-index: 49;
   animation-duration: 4s;
   animation-name: phone-ring-circle-2;
-  animation-iteration-count: infinite;
+  /* animation-iteration-count: infinite; */
   background-color: rgba(19, 192, 232, 0.5);
   box-sizing: border-box;
 }
@@ -310,6 +309,7 @@
   text-align: right;
   top: -42px;
   z-index: 60;
+
 }
 
 #messengers-panel #msg-sk,
@@ -373,10 +373,10 @@
   background: url(https://messengers.incolor.agency/color_linkedin.svg);
 }
 
-#messengers-panel-content {
+/* #messengers-panel-content {
   transform: translate(100%, 0);
   min-height: 15px;
-}
+} */
 
 .transition {
   -webkit-transition: all 0.8s ease-in-out 0s;
@@ -681,7 +681,7 @@
 
 .inm_leadmagnet_button:hover {
   background-color: #0983a5;
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
 }
 
 .inm_leadmagnet_footer {
@@ -733,4 +733,28 @@
 
 #in-messages.pos-left #messengers-panel-content {
   transform: translate(-100%, 0);
+}
+
+
+
+
+/* 
+#messengers-panel {
+    transform: translateX(140%);
+} */
+
+/* #messengers-panel-content-hidden {
+  transform: translateX(0);
+} */
+
+/* #messengers-panel-content-visible {
+  transform: translateX(100%);
+} */
+
+.hidden-panel {
+  transform: translateX(100%);
+}
+
+.rotatering-btn {
+  transform: rotate(135deg);
 }
