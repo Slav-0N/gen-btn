@@ -1,0 +1,736 @@
+#in-messages {
+  position: fixed;
+  right: 70px;
+  bottom: 50px;
+  z-index: 150;
+}
+
+#in-messages input {
+  -webkit-appearance: none;
+}
+
+#messengers-float-button {
+  width: 50px;
+  height: 50px;
+  background: url(https://messengers.incolor.agency/color_phone.svg) #13c0e8;
+  border-radius: 50%;
+  z-index: 51;
+
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(135deg);
+
+
+  /* transition-property:  transform; */
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
+    transition-delay: 100ms;
+    transition-property: transform;
+}
+
+#messengers-float-button:hover {
+  transform: rotate(0deg);
+}
+
+#messengers-float-button.inmcall {
+  animation-duration: 4s;
+  animation-name: phone-ring;
+  animation-iteration-count: infinite;
+  background: url(https://messengers.incolor.agency/color_phone.svg) #13c0e8;
+}
+
+#messengers-float-button.inmch {
+  animation: none;
+  background: url(https://messengers.incolor.agency/color_chat.svg) #13c0e8;
+}
+
+#messengers-float-button.inmchat {
+  animation: none;
+  background: url(https://messengers.incolor.agency/color_chat.svg) #13c0e8;
+}
+
+#messengers-float-button.inmsk {
+  animation: none;
+  background: url(https://messengers.incolor.agency/color_skype.svg) #15ace5;
+}
+
+#messengers-float-button.inmfb {
+  animation: none;
+  background: url(https://messengers.incolor.agency/color_facebook.svg) #475993;
+}
+
+#messengers-float-button.inmvb {
+  animation: none;
+  background: url(https://messengers.incolor.agency/color_viber.svg) #7d3daf;
+}
+
+#messengers-float-button.inmvk {
+  animation: none;
+  background: url(https://messengers.incolor.agency/color_vk.svg) #4d76a1;
+}
+
+/* #messengers-float-button.inmte {
+  animation: none;
+  background: url(https://messengers.incolor.agency/color_telegram.svg) #61a8de;
+} */
+
+#messengers-float-button.inmwh {
+  animation: none;
+  background: url(https://messengers.incolor.agency/color_whatsapp.svg) #1bd741;
+}
+
+#messengers-float-button.inmin {
+  animation: none;
+  background: url(https://messengers.incolor.agency/color_instagram.svg) #c752c9;
+}
+
+
+#ring-1 {
+  width: 44px;
+  height: 44px;
+  border: 2px solid #13c0e8;
+  border-radius: 50%;
+  right: 72px;
+  bottom: 52px;
+  position: fixed;
+  z-index: 49;
+  animation-duration: 4s;
+  animation-name: phone-ring-circle;
+  animation-iteration-count: infinite;
+  box-sizing: border-box;
+}
+
+#ring-2 {
+  width: 44px;
+  height: 44px;
+  border: 3px solid #13c0e8;
+  border-radius: 50%;
+  right: 72px;
+  bottom: 52px;
+  position: fixed;
+  z-index: 49;
+  animation-duration: 4s;
+  animation-name: phone-ring-circle-2;
+  animation-iteration-count: infinite;
+  background-color: rgba(19, 192, 232, 0.5);
+  box-sizing: border-box;
+}
+
+#ring-1.inmsk {
+  border: 2px solid #15ace5;
+}
+
+#ring-1.inmfb {
+  border: 2px solid #475993;
+}
+
+#ring-1.inmvb {
+  border: 2px solid #7d3daf;
+}
+
+#ring-1.inmvk {
+  border: 2px solid #4d76a1;
+}
+
+#ring-1.inmte {
+  border: 2px solid #61a8de;
+}
+
+#ring-1.inmwh {
+  border: 2px solid #1bd741;
+}
+
+#ring-1.inmin {
+  border: 2px solid #d254d7;
+}
+
+#ring-2.inmsk {
+  border: 3px solid #15ace5;
+  background-color: rgba(21, 172, 229, 0.5);
+}
+
+#ring-2.inmch {
+  border: 3px solid #15ace5;
+  background-color: rgba(21, 172, 229, 0.5);
+}
+
+#ring-2.inmfb {
+  border: 3px solid #475993;
+  background-color: rgba(71, 89, 147, 0.5);
+}
+
+#ring-2.inmvb {
+  border: 3px solid #7d3daf;
+  background-color: rgba(71, 89, 147, 0.5);
+}
+
+#ring-2.inmvk {
+  border: 3px solid #4d76a1;
+  background-color: rgba(71, 89, 147, 0.5);
+}
+
+#ring-2.inmte {
+  border: 3px solid #61a8de;
+  background-color: rgba(97, 168, 222, 0.51);
+}
+
+#ring-2.inmwh {
+  border: 3px solid #1bd741;
+  background-color: rgba(27, 215, 65, 0.5);
+}
+
+#ring-2.inmin {
+  border: 3px solid #de64d9;
+  background-color: rgba(71, 89, 147, 0.5);
+}
+
+@keyframes phone-ring {
+  from {
+    transform: rotate(135deg);
+  }
+
+  35% {
+    transform: rotate(135deg);
+  }
+
+  37% {
+    transform: rotate(125deg);
+  }
+
+  39% {
+    transform: rotate(135deg);
+  }
+
+  41% {
+    transform: rotate(125deg);
+  }
+
+  43% {
+    transform: rotate(135deg);
+  }
+
+  45% {
+    transform: rotate(125deg);
+  }
+
+  48% {
+    transform: rotate(135deg);
+  }
+
+  50% {
+    transform: rotate(125deg);
+  }
+
+  52% {
+    transform: rotate(135deg);
+  }
+
+  54% {
+    transform: rotate(125deg);
+  }
+
+  56% {
+    transform: rotate(135deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(130deg);
+  }
+}
+
+@keyframes phone-ring-circle {
+
+  from,
+  25% {
+    width: 44px;
+    height: 44px;
+    opacity: 1;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  90% {
+    width: 100px;
+    height: 100px;
+    margin-right: -25px;
+    margin-bottom: -25px;
+    opacity: 0;
+  }
+
+  to {
+    width: 44px;
+    height: 44px;
+    opacity: 0
+  }
+}
+
+
+@keyframes phone-ring-circle-2 {
+
+  from,
+  55% {
+    width: 44px;
+    height: 44px;
+    opacity: 1;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  95% {
+    width: 150px;
+    height: 150px;
+    margin-right: -50px;
+    margin-bottom: -50px;
+    opacity: 0;
+  }
+
+  to {
+    width: 44px;
+    height: 44px;
+    opacity: 0
+  }
+}
+
+#messengers-panel {
+  position: absolute;
+  height: 35px;
+  overflow: hidden;
+  width: 0;
+  right: 49px;
+  text-align: right;
+  top: -42px;
+  z-index: 60;
+}
+
+#messengers-panel #msg-sk,
+#messengers-panel #msg-fb,
+#messengers-panel #msg-ch,
+#messengers-panel #msg-te,
+#messengers-panel #msg-vb,
+#messengers-panel #msg-call,
+#messengers-panel #msg-wh,
+#messengers-panel #msg-vk,
+#messengers-panel #msg-in,
+#messengers-panel #msg-ca,
+#messengers-panel #msg-li {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 12px;
+}
+
+#messengers-panel #msg-sk {
+  background: url(https://messengers.incolor.agency/color_skype.svg);
+}
+
+#messengers-panel #msg-fb {
+  background: url(https://messengers.incolor.agency/color_facebook.svg);
+}
+
+#messengers-panel #msg-te {
+  background: url(https://messengers.incolor.agency/color_telegram.svg);
+}
+
+#messengers-panel #msg-vb {
+  background: url(https://messengers.incolor.agency/color_viber.svg);
+}
+
+#messengers-panel #msg-call {
+  background: url(https://messengers.incolor.agency/color_phone.svg);
+}
+
+#messengers-panel #msg-wh {
+  background: url(https://messengers.incolor.agency/color_whatsapp.svg);
+}
+
+#messengers-panel #msg-ch {
+  background: url(https://messengers.incolor.agency/color_chat.svg);
+}
+
+#messengers-panel #msg-vk {
+  background: url(https://messengers.incolor.agency/color_vk.svg);
+}
+
+#messengers-panel #msg-in {
+  background: url(https://messengers.incolor.agency/color_instagram.svg);
+}
+
+#messengers-panel #msg-ca {
+  background: url(https://messengers.incolor.agency/color_phone.svg);
+}
+
+#messengers-panel #msg-li {
+  background: url(https://messengers.incolor.agency/color_linkedin.svg);
+}
+
+#messengers-panel-content {
+  transform: translate(100%, 0);
+  min-height: 15px;
+}
+
+.transition {
+  -webkit-transition: all 0.8s ease-in-out 0s;
+  -moz-transition: all 0.8s ease-in-out 0s;
+  -ms-transition: all 0.8s ease-in-out 0s;
+  -o-transition: all 0.8s ease-in-out 0s;
+  transition: all 0.8s ease-in-out 0s;
+}
+
+#messengers-callback,
+#messengers-callback-sent {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  padding: 25px 35px;
+  box-sizing: border-box;
+  font-family: Tahoma, Arial;
+  position: absolute;
+  display: none;
+  right: 30px;
+  bottom: 54px;
+}
+
+#messengers-callback-sent {
+  height: 215px;
+}
+
+#messengers-callback .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #282828;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#messengers-callback-sent .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #282828;
+  padding-top: 70px;
+  text-align: center;
+}
+
+#messengers-callback .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+
+#messengers-callback input:focus {
+  outline: none;
+}
+
+#messengers-callback .input-wrapper {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#messengers-callback .input-wrapper input {
+  border: 1px solid #848484;
+  line-height: 42px;
+  text-align: center;
+  font-family: Tahoma, Arial;
+  font-size: 14px;
+  width: 100%;
+}
+
+#messengers-callback .submit-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+#messengers-callback .submit-wrapper input {
+  background-color: #13c3ec;
+  border: none;
+  border-radius: 20px;
+  line-height: 40px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  font-family: Tahoma, Arial;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in 0s;
+}
+
+#messengers-callback .submit-wrapper input:hover {
+  background-color: #489cec;
+}
+
+#messengers-callback .msg_phones {
+  font-size: 12px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#incolor-widget-footer {
+  position: absolute;
+  background-color: #7f7f7f;
+  color: #fff;
+  font-size: 12px;
+  font-family: Tahoma, Arial;
+  border-radius: 10px;
+  padding: 3px 3px;
+  width: 106px;
+  text-align: center;
+  right: 65px;
+  bottom: -20px;
+  display: none;
+  opacity: 0.7;
+}
+
+#incolor-widget-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+#in-messages.mobile-messages {
+  right: 30px;
+  bottom: 27px;
+}
+
+#inm_cta {
+  width: 240px;
+  position: absolute;
+  right: 75px;
+  bottom: -24px;
+  height: 100px;
+  text-align: right;
+  display: none;
+}
+
+#inm_cta:before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+#inm_cta span {
+  display: inline-block;
+  background-color: #15ace5;
+  opacity: 0.85;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: left;
+  font-family: Tahoma, Arial;
+}
+
+.mobile-messages #ring-1 {
+  right: 31px;
+  bottom: 27px;
+}
+
+.mobile-messages #ring-2 {
+  right: 31px;
+  bottom: 27px;
+}
+
+.mobile-messages #inm_cta {
+  right: 55px;
+}
+
+.mobile-messages #messengers-callback,
+.mobile-messages #messengers-callback-sent {
+  right: -25px;
+  width: 310px;
+  padding: 20px 10px;
+}
+
+.mobile-messages #messengers-callback .input-wrapper input {
+  width: 200px;
+  margin: 0 auto;
+
+}
+
+#inm_leadmagnet {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 360px;
+  background-color: rgba(25, 29, 40, 0.95);
+  z-index: 999;
+  max-height: 100vh;
+}
+
+#inm_leadmagnet.mobile-messages {
+  width: 100%;
+}
+
+#inm_leadmagnet.mobile-messages .inm_inner {
+  padding: 0 10px;
+}
+
+#inm_leadmagnet.short {
+  position: absolute;
+}
+
+.inm_leadmagnet-close {
+  background: url(https://messengers.incolor.agency/close.png) 0 0 no-repeat;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 10px;
+  cursor: pointer;
+  background-size: 100%;
+}
+
+#inm_leadmagnet.short .inm_leadmagnet_footer {
+  display: none;
+}
+
+#inm_leadmagnet .inm_inner {
+  width: 100%;
+  top: calc(50% - 200px + 20px);
+  padding: 0 30px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.inm_leadmagnet-line1 {
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.inm_leadmagnet-line2 {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding-top: 25px;
+}
+
+.inm_leadmagnet-line2:before {
+  content: ' ';
+  position: absolute;
+  width: 90px;
+  border-top: 1px solid #636569;
+  height: 1px;
+  margin-top: -25px;
+  left: calc(50% - 45px);
+}
+
+.inm_leadmagnet-field {
+  margin-top: 25px;
+}
+
+.inm_leadmagnet-field input {
+  border: 1px solid #afafaf;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 50px;
+  height: 50px;
+  padding: 0 10px 0 55px;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+.inm_leadmagnet_name {
+  background: url(//messengers.incolor.agency/ico-user.png) 15px 50% no-repeat;
+}
+
+.inm_leadmagnet_phone {
+  background: url(//messengers.incolor.agency/ico-phone.png) 15px 50% no-repeat;
+}
+
+.inm_leadmagnet-btn {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.inm_leadmagnet_button {
+  display: inline-block;
+  background-color: #0aa6d0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  height: 58px;
+  line-height: 58px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in 0s;
+}
+
+.inm_leadmagnet_button:hover {
+  background-color: #0983a5;
+  transform: rotate(180deg);
+}
+
+.inm_leadmagnet_footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10px;
+}
+
+.inm_leadmagnet_footer a {
+  color: #6d6d6d;
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.inm_leadmagnet_footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#in-messages.pos-left {
+  left: 70px;
+  right: auto;
+}
+
+#in-messages.pos-left #ring-1,
+#in-messages.pos-left #ring-2 {
+  right: calc(100% - 68px);
+}
+
+#in-messages.pos-left #messengers-panel {
+  left: 20px;
+  right: auto;
+}
+
+#in-messages.pos-left #inm_cta {
+  right: calc(100% - 260px);
+}
+
+#in-messages.pos-left #messengers-callback,
+#in-messages.pos-left #messengers-callback-sent {
+  right: calc(100% - 335px);
+}
+
+#in-messages.pos-left #incolor-widget-footer {
+  right: calc(100% - 145px);
+}
+
+#in-messages.pos-left #messengers-panel-content {
+  transform: translate(-100%, 0);
+}
