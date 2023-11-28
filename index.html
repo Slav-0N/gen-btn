@@ -7,54 +7,44 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div id="in-messages" class="pos-right">
+    <div id="in-messages" class="wrapper">
       <button type="button" id="messengers-float-button" class="inmte rotatering-btn"></button>
-     
-        <div id="messengers-panel" style="width: 141px">
-          <div
-            id="messengers-panel-content"
-            class="transition hidden-panel"
-            
-          >
-            <a
-              id="msg-ca"
-              class="messenger-ico"
-              href="tel:+380977181188"
-              target="_blank"
-              title="Позвонить сейчас"
-              onclick="inmSendEvent( 'Позвонить сейчас' ); inmSendLog(this);"
-              data-code="Позвонить сейчас"
-            ></a
-            ><a
-              id="msg-te"
-              class="messenger-ico"
-              href="https://t.me/imglawyer"
-              target="_blank"
-              title="Написать в Telegram"
-              onclick="inmSendEvent( 'Telegram' ); inmSendLog(this);"
-              data-code="Telegram"
-            ></a
-            ><a
-              id="msg-wh"
-              class="messenger-ico"
-              href="https://wa.me/+380505068500"
-              target="_blank"
-              title="Написать в WhatsApp"
-              onclick="inmSendEvent( 'WhatsApp' ); inmSendLog(this);"
-              data-code="WhatsApp"
-            ></a>
-          </div>
-        </div>
-     
-      <!-- <div id="incolor-widget-footer" style="display: block">
-        <a href="//messengers.incolor.agency" target="_blank"
-          >sovilgo@gmail.com</a
+      
+      <div id="messengers-panel" style="width: 141px">
+        <div
+          id="messengers-panel-content"
+          class="transition hidden-panel"
+          
         >
-      </div> -->
-
+          <a
+            id="msg-ca"
+            class="messenger-ico"
+            href="tel:+380977181188"
+            target="_blank"
+            title="Позвонить сейчас"
+            onclick="inmSendEvent( 'Позвонить сейчас' ); inmSendLog(this);"
+            data-code="Позвонить сейчас"
+          ></a
+          ><a
+            id="msg-te"
+            class="messenger-ico"
+            href="https://t.me/imglawyer"
+            target="_blank"
+            title="Написать в Telegram"
+            onclick="inmSendEvent( 'Telegram' ); inmSendLog(this);"
+            data-code="Telegram"
+          ></a
+          ><a
+            id="msg-wh"
+            class="messenger-ico"
+            href="https://wa.me/+380505068500"
+            target="_blank"
+            title="Написать в WhatsApp"
+            onclick="inmSendEvent( 'WhatsApp' ); inmSendLog(this);"
+            data-code="WhatsApp"
+          ></a>
+        </div>
+      </div>
       <script src="./js/hidden-panel.js"></script>
-      <!-- <div id="ring-1" class="inmte"></div>
-      <div id="ring-2" class="inmte"></div>
-    </div> -->
   </body>
 </html>
