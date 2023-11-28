@@ -2,7 +2,7 @@
   position: fixed;
   right: 70px;
   bottom: 50px;
-  z-index: 150;
+  z-index: 100500;
 }
 
 #messengers-float-button {
@@ -20,6 +20,7 @@
   border: 0;
 
   transition-duration: 700ms;
+  opacity: 1;
 }
 
 phone-ring {
@@ -52,20 +53,16 @@ phone-ring {
 }
 
 #messengers-panel #msg-wh {
-  background: url("../img/color_phone.svg");
+  background: url("../img/color_whatsapp.svg");
 }
 
 #messengers-panel #msg-ca {
-  background: url("../img/color_whatsapp.svg");
+  background: url("../img/color_phone.svg");
 }
 
 .transition {
   transition: all 0.8s ease-in-out 0s;
 }
-
-/* #in-messages.pos-left #messengers-panel-content {
-  transform: translate(-100%, 0);
-} */
 
 .hidden-panel {
   transform: translateX(100%);
