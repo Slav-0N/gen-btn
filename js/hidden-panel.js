@@ -7,7 +7,5 @@ function cuca(event) {
   console.log("hello!");
   hiddenClass.classList.toggle("hidden-panel");
   mainButton.classList.toggle("rotatering-btn");
-  setTimeout(() => {
-    mainButton.classList.toggle("hidden-rings");
-  }, 500);
+  mainButton.classList.toggle("hidden-rings");
 }
